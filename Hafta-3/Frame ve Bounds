@@ -1,0 +1,7 @@
+#--# Frame ve Bounds #--#
+
+Merhabalar yapmış olduğum araştırmada dikkatimi çeken iki örnekle frame ve bounds arasındaki farkları anlatarak bu yapıları anlamlandırmaya çalışacağım. 
+
+Frame çerçeve demektir. Superview da frame'in üstünde olan yapıdır. Nasıl bir yapıda olduğunu hatırlamamıza yardımcı olması için bir resim düşünelim. Bir de evin duvarını. Elimizdeki resmi evin duvarında istediğimiz yere asabiliriz değil mi? Burada evin duvarı superview, resim de frame olarak düşünebiliriz. IOS'ta kooardiant düzleminin kökeni (0,0) noktasıdır. Tanımlamadığınızda duvarın sol üst köşesinde frame'imiz belirir. X değerini değiştirerek sağa doğru, Y değerini değiştirerekte aşağı doğru taşıyabiliriz.
+
+Bounds ise sınır demektir. Burada bounds dışında kalan alan önemli değildir. Yalnızda bounds alanı önemlidir. Üst görünümde nerede olduğu hakkında hiçbir şey bilinmiyor. Nasıl bir yapıda olduğunu her zaman hatırlamak istersek, bir futbol sahası düşünelim. Bu futbol sahasında futbol oynayalım. Sahanın nerede olduğunun bir önemi var mı? Bence yok. Sınırların başlangıç noktası yine frame de olduğu gibi (0,0) görünümün sol üst köşe noktasıdır. 
