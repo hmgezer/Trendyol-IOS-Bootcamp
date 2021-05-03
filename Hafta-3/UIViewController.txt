@@ -1,0 +1,32 @@
+UIView Controller lifecycle metodlarıyla ilgili yaptığım araştırmalarda hatırlayabileceğim şekilde tanımlar yapmaya çalışacağım. 
+
+1- loadView()
+
+Eğer view'ı storyboard ile oluşturduysanız bu metodu kullanmanıza gerek yok. Ancak kodla oluşturduysanız viewDidLoad yerine kullanabilirsiniz.
+
+2- viewDidLoad()
+
+Bu lifecycle sadece ilk defa yüklemede çağırılır. Bu aşamada API bağlantısı ile veri çekmek çekilen veriler ile ilgili işlemler yapmak yüksek maliyetinden dolayı uygulamayı yavaşlatabilir. Takılmalara sebep olabilir, kullanıcıları rahatsız edebilir. Data modelini kullanarak view objelerini güncellemek için uygun bir lifecycledır.
+
+3- viewWillAppear(_ animated: Bool)
+
+Controller ekrana yüklenmeye başladığı anda çağrılır. Maliyetli ve tek seferde yaılacak işlemler için uygun değildir. Geometrik hesaplar için de uygun değildir. Birden çok kez çağırılabilir.
+
+4- viewDidAppear(_ animated: Bool)
+
+Bu aşamada ekran yüklenmiş ve kullanıcı tarafından görünen bir durumdadır. Bu aşamada zaman alacak işlemler yapılabilir. API üzerinden data çekmek location işlemleri yapmak gibi işlemleri bu aşamada yapabiliriz. Maliyetli işlemler yapmaya başlamak için en iyi cycledır.
+
+5- viewWillDisappear(_ animated: Bool)
+
+Kullanıcı navigasyonda geri giderken veya tab değiştirirken gibi durumlarda çağırılır. Ekran hala yüklü olmasına rağmen kullanıcı tarafından görülmemektedir. Genellikle bir önceki lifecycle olan viewDidAppear'da yapılan zamanlayıcı durdurma vs. işlemleri geri almak için kullanılır.
+
+6- viewDidDisappear(_ animated: Bool)
+
+Ekran bu lifecycle da kaybolmuştur ve yapmış olduğunuz değişiklikler üzerinde işlem yapabilirsiniz. Ekrana ait verileri kaydetmek veya heap üzerindeki kullandığınız objeleri release etmek için de kullanılır.
+
+
+
+
+
+
+
