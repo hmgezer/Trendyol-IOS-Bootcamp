@@ -1,0 +1,5 @@
+loadView viewController tarafından yönetilen bir yöntemdir. ViewController, geçerli görünümü nil olduğunda onu çağırır.  loadView sizin oluşturduğunuz bir görünümü alır ve viewController'ın görünümüne ayarlar. Storyboard kullanıyorsanız loadView kullanmanıza gerek yoktur. loadView UIView nesnesini oluşturup başlatır.
+viewDidLoad() görünüm loading bitirdiğinde çağırılırken, görünüm loading başladığında loadView() çağırılır.
+
+
+
