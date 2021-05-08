@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="afb-KO-grv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification ListenerVC-->
+        <scene sceneID="L3g-b3-s0F">
+            <objects>
+                <viewController id="afb-KO-grv" customClass="NotificationListenerVC" customModule="Week_3_Part_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9xO-wT-w4n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fTA-HM-plE">
+                                <rect key="frame" x="143" y="385" width="128" height="125.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozk-wQ-VD0">
+                                <rect key="frame" x="20" y="532" width="374" height="30"/>
+                                <state key="normal" title="Listen Notification"/>
+                                <connections>
+                                    <segue destination="KkY-yO-XYP" kind="show" id="2r2-cS-TKR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your notification mesage?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-FQ-pN1">
+                                <rect key="frame" x="20" y="343" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Tsb-dy-PDx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cKG-R2-KaY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fTA-HM-plE" firstAttribute="top" secondItem="cKG-R2-KaY" secondAttribute="top" constant="340" id="1rW-fK-UXg"/>
+                            <constraint firstItem="Brt-FQ-pN1" firstAttribute="leading" secondItem="cKG-R2-KaY" secondAttribute="leading" constant="20" id="4OB-Ng-iQH"/>
+                            <constraint firstItem="fTA-HM-plE" firstAttribute="leading" secondItem="cKG-R2-KaY" secondAttribute="leading" constant="143" id="Aqb-sM-KAX"/>
+                            <constraint firstItem="ozk-wQ-VD0" firstAttribute="leading" secondItem="cKG-R2-KaY" secondAttribute="leading" constant="20" id="MKo-WA-gyX"/>
+                            <constraint firstItem="fTA-HM-plE" firstAttribute="centerY" secondItem="9xO-wT-w4n" secondAttribute="centerY" id="Xg4-S9-kYG"/>
+                            <constraint firstItem="cKG-R2-KaY" firstAttribute="trailing" secondItem="ozk-wQ-VD0" secondAttribute="trailing" constant="20" id="Z9l-qH-FkY"/>
+                            <constraint firstItem="fTA-HM-plE" firstAttribute="centerX" secondItem="9xO-wT-w4n" secondAttribute="centerX" id="q6Q-e4-Qls"/>
+                            <constraint firstItem="ozk-wQ-VD0" firstAttribute="top" secondItem="fTA-HM-plE" secondAttribute="bottom" constant="20" id="r1L-Al-yLh"/>
+                            <constraint firstItem="fTA-HM-plE" firstAttribute="top" secondItem="Brt-FQ-pN1" secondAttribute="bottom" constant="20" id="sON-u6-gMA"/>
+                            <constraint firstItem="cKG-R2-KaY" firstAttribute="trailing" secondItem="Brt-FQ-pN1" secondAttribute="trailing" constant="20" id="tH1-Sc-NTX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listenerImage" destination="fTA-HM-plE" id="NG9-MT-n79"/>
+                        <outlet property="notificationDataLbl" destination="Brt-FQ-pN1" id="il2-hI-rL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7H-La-DZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221.7391304347827" y="112.5"/>
+        </scene>
+        <!--Notification SenderVC-->
+        <scene sceneID="rv8-EE-vdI">
+            <objects>
+                <viewController id="KkY-yO-XYP" customClass="NotificationSenderVC" customModule="Week_3_Part_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dd1-T7-8il">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cp-9W-Zbx">
+                                <rect key="frame" x="147.5" y="406" width="119" height="30"/>
+                                <state key="normal" title="Send Notification"/>
+                                <connections>
+                                    <action selector="sendNotificationBtn:" destination="KkY-yO-XYP" eventType="touchUpInside" id="4iI-Lr-muM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOQ-Qc-tOG">
+                                <rect key="frame" x="32" y="356" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rql-5x-WAi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8cp-9W-Zbx" firstAttribute="top" secondItem="EOQ-Qc-tOG" secondAttribute="bottom" constant="16" id="RPy-XC-Qg0"/>
+                            <constraint firstItem="rql-5x-WAi" firstAttribute="trailing" secondItem="EOQ-Qc-tOG" secondAttribute="trailing" constant="32" id="UO0-G4-ZNv"/>
+                            <constraint firstItem="EOQ-Qc-tOG" firstAttribute="leading" secondItem="rql-5x-WAi" secondAttribute="leading" constant="32" id="clH-kd-WbD"/>
+                            <constraint firstItem="8cp-9W-Zbx" firstAttribute="centerY" secondItem="dd1-T7-8il" secondAttribute="centerY" id="gkx-7N-HZr"/>
+                            <constraint firstItem="8cp-9W-Zbx" firstAttribute="centerX" secondItem="dd1-T7-8il" secondAttribute="centerX" id="wCW-dV-AP4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RB4-t1-oAr"/>
+                    <connections>
+                        <outlet property="sendText" destination="EOQ-Qc-tOG" id="XdY-sb-gmN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEX-Nt-b4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
