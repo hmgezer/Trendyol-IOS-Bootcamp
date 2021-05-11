@@ -13,7 +13,7 @@ Klasör içerisinde;
 - **Bir Oyun senaryosu için dönme açıları** 
 - **Girilen sayının asal olup olmadığını bulan bir extension yazınız** 
 - **İki Parametreli ve Farklı Tipli bir generic örneği yapınız (T,U)** maddeleri ile ilgili kodları bulabilirsiniz.
-- Ayrıca **[Project Euler](https://projecteuler.net/archives)** sorularından 7. ve 8. soruların cevapları yer almaktadır.
+- Ayrıca **[Project Euler](https://projecteuler.net/archives)** sorularından **7. ve 8. soruların cevapları** yer almaktadır.
 
 **1 - Elimizde sadece harflerden oluşan (noktalama işareti veya sayılar yok) uzun stringler olsun. Bu stringlerin içinde bazı hafrflerin tekrar edeceğini düşünün. Mesela 'a ' harfi 20 farklı yerde geçiyor. Bir fonksiyon ile verilen parametre değerine eşit ve daha fazla bulunan harfler silinecektir. Sonra geriye kalan string ekrana yazdırılacaktır.**
 
