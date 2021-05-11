@@ -9,11 +9,11 @@ Klasör içerisinde birinci haftada verilen [Project Euler](https://projecteuler
 ## Hafta-2
 
 Klasör içerisinde;
-**If let - guard let kullanım tercihlerini neye göre belirlersiniz?** sorusuna araştırmalarım sonucunda verdiğim cevabı bulabilirsiniz.
-**Bir Oyun senaryosu için dönme açıları** 
-**Girilen sayının asal olup olmadığını bulan bir extension yazınız** 
-**İki Parametreli ve Farklı Tipli bir generic örneği yapınız (T,U)** maddeleri ile ilgili kodları bulabilirsiniz.
-Ayrıca **[Project Euler](https://projecteuler.net/archives)** sorularından 7. ve 8. soruların cevapları yer almaktadır.
+- **If let - guard let kullanım tercihlerini neye göre belirlersiniz?** sorusuna araştırmalarım sonucunda verdiğim cevabı bulabilirsiniz.
+- **Bir Oyun senaryosu için dönme açıları** 
+- **Girilen sayının asal olup olmadığını bulan bir extension yazınız** 
+- **İki Parametreli ve Farklı Tipli bir generic örneği yapınız (T,U)** maddeleri ile ilgili kodları bulabilirsiniz.
+- Ayrıca **[Project Euler](https://projecteuler.net/archives)** sorularından 7. ve 8. soruların cevapları yer almaktadır.
 
 **1 - Elimizde sadece harflerden oluşan (noktalama işareti veya sayılar yok) uzun stringler olsun. Bu stringlerin içinde bazı hafrflerin tekrar edeceğini düşünün. Mesela 'a ' harfi 20 farklı yerde geçiyor. Bir fonksiyon ile verilen parametre değerine eşit ve daha fazla bulunan harfler silinecektir. Sonra geriye kalan string ekrana yazdırılacaktır.**
 
@@ -24,14 +24,14 @@ Ayrıca **[Project Euler](https://projecteuler.net/archives)** sorularından 7. 
 ## Hafta-3
 
 Klasör içerisinde;
-**Frame vs Bounds açıklayınız.**
-**UIViewController yaşam döngüsünü araştırıp her bir methodu kendi cümlelerinizle özetleyiniz.**
-**UIPageControl kullanarak active sayfayı belirleyiniz.**
-**Notification sender daki mesajı kullanıcıdan alınız.**
-**static keyword neden kullanırız. Örnek bir kullanım yapınız.**
-**Harita uygulamanızda, izni kapalı olan kullanıcıyı ayarlara yönlendiriniz.**
-**Searchbar || SearchController => cell için custom bir cell tanımlayınız. Veri bulunamadığında ÖZEL bir mesaj gösteriniz.**
-**Bir harita uygulamasında mevcut konuma pinleme yapıp, adrese çeviriniz. (Örnek : Getir)**
-**loadView'ı araştırınız.**
+- **Frame vs Bounds açıklayınız.**
+- **UIViewController yaşam döngüsünü araştırıp her bir methodu kendi cümlelerinizle özetleyiniz.**
+- **UIPageControl kullanarak active sayfayı belirleyiniz.**
+- **Notification sender daki mesajı kullanıcıdan alınız.**
+- **static keyword neden kullanırız. Örnek bir kullanım yapınız.**
+- **Harita uygulamanızda, izni kapalı olan kullanıcıyı ayarlara yönlendiriniz.**
+- **Searchbar || SearchController => cell için custom bir cell tanımlayınız. Veri bulunamadığında ÖZEL bir mesaj gösteriniz.**
+- **Bir harita uygulamasında mevcut konuma pinleme yapıp, adrese çeviriniz. (Örnek : Getir)**
+- **loadView'ı araştırınız.**
 sorularına ait swift kodlarını bulabilirsiniz.
 
